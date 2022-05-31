@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>&lt;model-viewer&gt; example</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="demo-styles.css" />
+
+    <!-- The :focus-visible polyfill removes the focus ring for some input types -->
+    <script
+      src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js"
+      defer
+    ></script>
+  </head>
+
+  <body>
+    <div id="card">
+      <model-viewer
+        src="https://cdn.glitch.global/a668774d-e60e-4f6a-8155-5fb3f856105f/LibertStatue.glb?v=1653209524404"
+        ios-src="https://cdn.glitch.global/8c36839d-baec-413b-8c6d-64d5f1aabfe1/LibertStatue.usdz?v=1653209664281"
+        poster="https://cdn.glitch.global/a668774d-e60e-4f6a-8155-5fb3f856105f/liberty.png?v=1653209527849"
+        alt="The Statue of Liberty"
+        shadow-intensity="1"
+        camera-controls
+        auto-rotate
+        ar
+      >
+      </model-viewer>
+      <section class="attribution">
+        <span>
+          <h1>The Statue of Liberty</h1>
+          <p class="info">
+            The Statue of Liberty (Liberty Enlightening the World; French: La
+            Liberté éclairant le monde) is a colossal neoclassical sculpture on
+            Liberty Island in New York Harbor in New York City, in the United
+            States. The copper statue, a gift from the people of France to the
+            people of the United States, was designed by French sculptor
+            Frédéric Auguste Bartholdi and its metal framework was built by
+            Gustave Eiffel. The statue was dedicated on October 28, 1886.
+          </p>
+        </span>
+      </section>
+    </div>
+
+    <footer>
+      <span>AR/VR Project by BSU #415225, CC Year 2</span>
+      <span
+        >For all related files, please view the
+        <a
+          href="https://drive.google.com/drive/folders/1U5-gTts08t916U_xgRuSiUGLL4EM7-vq?usp=sharing"
+          >&lt;Google Drive Folder&gt;</a
+        >.</span
+      >
+    </footer>
+
+    <!-- Loads <model-viewer> for modern browsers: -->
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+  </body>
+</html>
